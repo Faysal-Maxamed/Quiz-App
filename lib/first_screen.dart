@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
+import 'package:quiz_application/suaalo_diini.dart';
 
 class FirstScreen extends StatelessWidget {
   const FirstScreen({super.key});
@@ -105,7 +106,7 @@ class FirstScreen extends StatelessWidget {
             ),
             const carContainer(
               tittle: "Suaalo Diini",
-              Navigate: null,
+              Navigate: QuestionScreen(),
             ),
             const SizedBox(
               height: 15,
