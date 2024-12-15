@@ -52,11 +52,18 @@ class _AqoonguudscreenState extends State<Aqoonguudscreen> {
               const SizedBox(
                 height: 120,
               ),
-              SelectableText(
-                textAlign: TextAlign.center,
-                QuestionAqoonguud[QuestionAqoonIndex].QuestionName!,
-                style: TextStyle(
-                    color: Colors.white, fontSize: 20, letterSpacing: 2.0),
+              Card(
+                color: secondback,
+                elevation: 16,
+                child: Padding(
+                  padding: const EdgeInsets.symmetric(vertical: 40),
+                  child: SelectableText(
+                    textAlign: TextAlign.center,
+                    QuestionAqoonguud[QuestionAqoonIndex].QuestionName!,
+                    style: const TextStyle(
+                        color: Colors.white, letterSpacing: 2.0, fontSize: 20),
+                  ),
+                ),
               ),
               const SizedBox(
                 height: 150,
