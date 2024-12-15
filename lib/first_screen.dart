@@ -1,6 +1,9 @@
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
+import 'package:quiz_application/s_aqoonguud.dart';
 import 'package:quiz_application/suaalo_diini.dart';
+import 'package:quiz_application/suaalo_english.dart';
+import 'package:quiz_application/suaalo_soomali.dart';
 
 class FirstScreen extends StatelessWidget {
   const FirstScreen({super.key});
@@ -113,21 +116,21 @@ class FirstScreen extends StatelessWidget {
             ),
             const carContainer(
               tittle: "Suaalo Soomaali",
-              Navigate: null,
+              Navigate: Guudscreen(),
             ),
             const SizedBox(
               height: 15,
             ),
             const carContainer(
               tittle: "Suaalo Aqoonguud",
-              Navigate: null,
+              Navigate: Aqoonguudscreen(),
             ),
             const SizedBox(
               height: 15,
             ),
             const carContainer(
               tittle: "Suaalo english",
-              Navigate: null,
+              Navigate: Englishscreen(),
             ),
           ],
         ),
